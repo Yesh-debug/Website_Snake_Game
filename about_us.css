@@ -1,0 +1,87 @@
+body {
+  margin: 0;
+  color: white;
+  text-align: center;
+}
+
+.about-us-container {
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("Assets/imgslogin/1.png"); /* Replace with your image filename */
+  background-size: 100; /* Ensure the background image covers the entire container */
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 20px;
+  box-sizing: border-box;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  font-family: "Press Start 2P", serif;
+}
+
+.Greeting {
+  text-align: center;
+  font-family: "Press Start 2P", serif;
+}
+
+.game_description {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  max-width: 600px;
+  font-family: "Press Start 2P", serif;
+  text-align: center;
+}
+
+/* Team Section */
+.team-section {
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.8
+  ); /* Semi-transparent background for contrast */
+  padding: 40px 20px;
+}
+
+.team-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.team-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px; /* Space between team members */
+  flex-wrap: wrap;
+}
+
+.team-member {
+  text-align: center;
+  max-width: 800px;
+  color: white;
+  font-family: "Press Start 2P", serif;
+}
+
+.team-member img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid white;
+  margin-bottom: 10px;
+}
+
+.team-member h3 {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+.team-member p {
+  font-size: 1rem;
+  margin: 5px 0;
+}

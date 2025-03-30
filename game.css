@@ -1,0 +1,146 @@
+body {
+  font-family: "Press Start 2P", serif;
+  height: 100dvh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #111;
+  color: rgba(255, 255, 255, 0.9);
+  overflow: hidden;
+}
+
+#GameBoard {
+  position: absolute;
+  width: 623px;
+  height: 400px;
+  top: 168px;
+  border-radius: 4px;
+  display: grid;
+  grid-template-columns: repeat(31, 20px);
+  grid-template-rows: repeat(20, 20px);
+  background: rgba(7, 26, 49, 0.6);
+  border: #919bbec7 10px solid;
+  backdrop-filter: blur(4px);
+  transform: perspective(1000px) rotateX(32deg) scaleX(0.54) scaleY(0.84);
+  border-color: #3a3838;
+  background-color: #7e7f80;
+}
+
+.user_info {
+  position: absolute;
+  display: flex;
+  width: 60px;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+}
+
+.about_us {
+  position: absolute;
+  right: -880px;
+  color: #fff;
+}
+
+.user_name {
+  position: absolute;
+  left: -940px;
+}
+
+.logout_link {
+  margin-top: 60px;
+  position: absolute;
+  right: -880px;
+  color: #fff;
+}
+
+.bg {
+  position: absolute;
+  height: 1000px;
+  z-index: -1;
+}
+
+.bg-blue {
+  position: fixed;
+  width: 100%;
+  height: 1000px;
+  z-index: -2;
+}
+
+.lg {
+  position: absolute;
+  width: 600px;
+  height: 400px;
+  top: 180px;
+  transform: perspective(1000px) rotateX(32deg) scaleX(0.54) scaleY(0.84);
+  left: 656px;
+}
+
+.title {
+  position: absolute;
+  top: 78px;
+  font-size: 20px;
+}
+
+.Score {
+  position: absolute;
+  top: 50px;
+  display: flex;
+  width: 60px;
+  height: 105px;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+}
+
+.GameScore {
+  left: calc(50% - 200px);
+}
+
+.HighScore {
+  right: calc(50% - 200px);
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0.5;
+  }
+}
+
+.Instruction {
+  position: absolute;
+  margin: 0;
+  top: 50%;
+  z-index: 1;
+  left: 80%;
+  transform: translate(-199.5%, -300%) perspective(1000px) rotateX(34deg);
+  text-align: center;
+  font-size: 18px;
+  animation: blink 2s linear infinite;
+}
+
+.Vignett {
+  height: 100dvh;
+  width: 100dvw;
+  background: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 0) 50%,
+    rgba(0, 0, 0, 1) 100%
+  );
+}
+
+body,
+.snake {
+  background-color: #414141;
+  border: #5a5a5a 1px dotted;
+}
+
+.food {
+  background-color: #dedede;
+  border: #999 5px solid;
+}
