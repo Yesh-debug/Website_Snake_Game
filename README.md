@@ -2,6 +2,7 @@ Snake Game with User Authentication System
 This was my very first project after I started learning how to code. It’s a website that combines a classic Snake game with a user authentication system. The authentication features include registration with email verification, login, logout, and password reset.
 
 Project Details:
+
 Start Date: September 2024
 
 End Date: January 2025
@@ -9,6 +10,7 @@ End Date: January 2025
 What started as a simple project to build login, register, and logout features turned into a bigger challenge when I decided to add a Snake game to push myself further.
 
 Technology Used:
+
 Frontend: HTML, CSS, JavaScript
 
 Backend: PHP and MySQL
